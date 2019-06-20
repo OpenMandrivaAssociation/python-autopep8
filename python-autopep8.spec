@@ -1,6 +1,6 @@
 Summary:	Automatic Python code formatter
 Name:		python-autopep8
-Version:	1.4.3
+Version:	1.4.4
 Release:	1
 Group:		Development/Python
 License:	GPLv2+
