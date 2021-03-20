@@ -1,11 +1,11 @@
 Summary:	Automatic Python code formatter
 Name:		python-autopep8
-Version:	1.5.5
+Version:	1.5.6
 Release:	1
 Group:		Development/Python
 License:	GPLv2+
 Url:		https://github.com/hhatto/autopep8
-Source0:	https://files.pythonhosted.org/packages/source/a/autopep8/autopep8-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/96/a5/d282540e6e0ea8a3fd58edaf97eff1d787e56787e5bf6c70f670aaedef7a/autopep8-1.5.6.tar.gz
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python3egg(setuptools)
 BuildArch:	noarch
