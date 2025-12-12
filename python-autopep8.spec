@@ -1,7 +1,7 @@
 Summary:	Automatic Python code formatter
 Name:		python-autopep8
 Version:	1.6.0
-Release:	3
+Release:	4
 Group:		Development/Python
 License:	GPLv2+
 Url:		https://github.com/hhatto/autopep8
