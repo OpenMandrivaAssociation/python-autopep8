@@ -7,7 +7,7 @@ License:	GPLv2+
 Url:		https://github.com/hhatto/autopep8
 Source0:	https://files.pythonhosted.org/packages/ec/67/564f7d15712a84d4035aa5ad0b97eeafdeccdb7e806d6a822595bf0ffa5f/autopep8-1.6.0.tar.gz
 BuildRequires:	pkgconfig(python3)
-BuildRequires:	python3egg(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools)
 BuildArch:	noarch
 
 %description
