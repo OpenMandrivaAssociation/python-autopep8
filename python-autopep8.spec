@@ -1,14 +1,16 @@
+%undefine _debugsource_packages
+
 Summary:	Automatic Python code formatter
 Name:		python-autopep8
-Version:	1.6.0
-Release:	6
+Version:	2.3.2
+Release:	1
 Group:		Development/Python
-License:	GPLv2+
+License:	MIT
 Url:		https://github.com/hhatto/autopep8
-Source0:	https://files.pythonhosted.org/packages/ec/67/564f7d15712a84d4035aa5ad0b97eeafdeccdb7e806d6a822595bf0ffa5f/autopep8-1.6.0.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/a/autopep8/autopep8-%{version}.tar.gz
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
-BuildArch:	noarch
+BuildSystem:	python
 
 %description
 A tool that automatically formats Python code to conform to the
@@ -17,12 +19,4 @@ PEP 8 style guide.
 %files
 %{_bindir}/autopep8
 %{py_puresitedir}/autopep8*
-
-%prep
-%autosetup -p1 -n autopep8-%{version}
-
-%build
-%py_build
-
-%install
-python setup.py install --root %{buildroot}
+%{python_sitelib}/__pycache__/autopep8.cpython-*.pyc
